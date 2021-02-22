@@ -1,2 +1,3 @@
-# python-bitcoin.de
+# bitcoinde
+
 Python wrapper for the bitcoin.de trading API
