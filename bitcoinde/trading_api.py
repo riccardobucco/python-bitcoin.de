@@ -24,9 +24,10 @@ class TradingAPI:
         def replace_path_params(match):
             key = match.group()[2:]
             return '' if path_params.get(key, None) is None else '/' + path_params[key]
+        get_params = {k + '[]' if isinstance(v, list) else k: v for k, v in get_params.items()}
         return (api['DEFAULT']['url']
                 + re.sub('(/):[^/]+', replace_path_params, path)
-                + ('?' + urlencode(sorted(get_params.items())) if len(get_params) else ''))
+                + ('?' + urlencode(sorted(get_params.items()), True) if len(get_params) else ''))
 
     def _get_headers(self, method: str, url: str,
                      post_params: Dict[str, Any] = {}) -> Dict[str, str]:
