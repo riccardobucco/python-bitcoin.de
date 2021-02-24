@@ -4,7 +4,7 @@ runs:
   using: composite
   steps:
     - run: |
-        pip install wheel
-        pip install flake8
+        pip install --user wheel
+        pip install --user flake8
         python -m flake8 --max-line-length=100
       shell: bash
