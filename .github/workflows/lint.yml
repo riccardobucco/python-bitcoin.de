@@ -9,4 +9,4 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v2
       - name: Run linter
-        uses: .github/actions/lint
+        uses: ./.github/actions/lint
