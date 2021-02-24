@@ -9,4 +9,6 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v2
       - name: Run linter
-        uses: ./.github/actions/lint
+        uses: TrueBrain/actions-flake8
+        with:
+          max_line_length: 100
