@@ -12,6 +12,7 @@ jobs:
           python-version: 3.8
       - run: |
           pip install --upgrade pip
+          pip install wheel
           python setup.py sdist bdist_wheel
       - uses: pypa/gh-action-pypi-publish@release/v1
         with:
