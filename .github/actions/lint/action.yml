@@ -6,5 +6,5 @@ runs:
     - run: |
         pip install wheel
         pip install flake8
-        flake8 --max-line-length=100
+        python -m flake8 --max-line-length=100
       shell: bash
