@@ -1,6 +1,6 @@
 # bitcoinde
 
-Python wrapper for the [bitcoin.de trading API](https://www.bitcoin.de/de/api/tapi/doc). Currently, only v4 is supported (i.e., the latest version).
+Python wrapper for the [bitcoin.de trading API](https://www.bitcoin.de/en/api/tapi/doc). Currently, only v4 is supported (i.e., the latest version).
 
 ## Installation
 
